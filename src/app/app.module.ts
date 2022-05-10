@@ -13,8 +13,10 @@ import { MyErrorHandler } from './utils/error-handler';
 
 /** Components */
 import { AppComponent } from './app.component';
+import { GenericAnalyticReportComponent } from './components/generic-analytic-report/generic-analytic-report.component';
 import { LogoutConfirmationDialogComponent } from './components/logout-confirmation-dialog/logout-confirmation-dialog.component';
 import { RemoveConfirmationDialogComponent } from './components/remove-confirmation-dialog/remove-confirmation-dialog.component';
+
 import { AuthenticationGuard } from './guards/authentication.guard';
 
 /**
@@ -25,9 +27,10 @@ import { ObjectArrayToStringPipe } from './pipes/object-array-to-string.pipe';
 @NgModule({
   declarations: [
     AppComponent,
+    GenericAnalyticReportComponent,
     LogoutConfirmationDialogComponent,
-    RemoveConfirmationDialogComponent,
     ObjectArrayToStringPipe,
+    RemoveConfirmationDialogComponent,
   ],
   imports: [
     AppRoutingModule,

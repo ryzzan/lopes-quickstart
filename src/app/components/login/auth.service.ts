@@ -43,7 +43,7 @@ export class AuthService {
 
   async login(login: Login): Promise<void | LoginResponse> {
     return this.http
-      .post(`${this.BASEURL}/crm-login/v1/auth?userType=CUSTOMER`, login)
+      .post(`${this.BASEURL}/crm-login/v1/auth?userType=AGENT`, login)
       .toPromise()
       .then((res) => {
         const { token } = res as LoginResponse;
